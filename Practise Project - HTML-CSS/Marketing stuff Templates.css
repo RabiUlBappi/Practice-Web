@@ -1,0 +1,239 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+}
+body{
+	font:100%/1.5em Helvetica,Arial,sans-serif;
+	color: #313131;
+    padding-bottom: 60px;
+}
+/* Custom container */
+.container hr {
+	margin: 60px 0;
+}
+.row{
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.main_content{
+	margin: 80px 0;
+	text-align: center;
+}
+.main_content h1{
+    font-size: 100px;
+    line-height: 1;
+}
+a{text-decoration: none;}
+/* Customize the navbar links to be fill the entire space of the .navbar */
+
+.navbar nav li a:hover {
+    color: #909909;
+}
+header{
+	border-radius: 0 0 5px 5px;
+	background: linear-gradient(#fff, rgba(0,0,0,.3));
+}
+.nav_min{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+h2{	
+	color: #313131;
+	padding: 10px;
+	margin: auto;
+}
+.navbar{margin-top: 5px;}
+nav ul li{
+	display: block;
+	border-top: 1px solid rgba(0,0,0,.3);
+	list-style: none;
+}
+nav li a {
+	padding: 10px;
+	color: #313131;
+	display: block;
+    font-weight: bold;
+    text-align: center;
+ }
+nav li:focus,nav li:hover,nav li:active{
+	background-color: rgb(229, 229, 229);
+	box-shadow: rgba(0, 0, 0, 0.121569) 0px 3px 8px inset;
+}
+
+ /* Main marketing message and sign up button */
+.main_content {
+	margin: 80px auto;
+	text-align: center;
+}
+.main_content h1 {
+	font-size: 65px;
+	line-height: 1;
+}
+.main_content p {
+	font-size: 24px;
+	line-height: 1.25;
+}
+.main_content .btn {
+	display: inline-block;
+	line-height: 20px;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 21px;
+	padding: 14px 24px;
+	color: #FFF;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: #5BB75B;
+	border: 1px solid;
+	border-radius: 6px;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+footer{margin-top: -40px; margin-left: 15px;}
+/* Supporting marketing content */
+.marketing p + h4 {
+	margin-top: 28px;
+}
+.marketing h4{
+	font-size: 28px;
+	line-height: 40px;
+	margin: 10px 0px;
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+}
+.marketing p{
+	margin: 0px 0px 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+.more_btn{
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	padding: 4px 12px;
+	color: rgb(51, 51, 51);
+	text-shadow: rgba(255, 255, 255, 0.74902) 0px 1px 1px;
+	background: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+	border: 1px solid;
+	border-radius: 4px;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px;
+}
+.marketing .columns_4{
+	float: left;
+	margin: 0 0 1em;
+	padding: 0 1em;
+}
+
+.container .columns_1,
+.container .columns_2,
+.container .columns_3,
+.container .columns_4,
+.container .columns_5,
+.container .columns_6,
+.container .columns_7,
+.container .columns_8,
+.container .columns_9,
+.container .columns_10,
+.container .columns_11,
+.container .columns_12	{ width: 100%;}
+
+.container { width: 100%; margin: 0 auto;}
+
+.clearfix:after,
+.container:after{
+	content: '';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.clearfix,
+.container{zoom:1;}
+
+@media only screen and (min-width: 480px){
+	.main_content h1 {
+		font-size: 100px;
+	}
+	h2{
+		float: left;
+		padding: 20px;
+		padding-left:  20px;
+	}
+	.menu a{
+		float: right;
+		width: 25px;
+		height: 24px;
+		margin-top: 20px;
+		margin-right: 20px;
+		padding-bottom: 10px;
+		border: 1px solid #FFF;
+		border-radius: 5px;
+		background: #fff url(glyphicons-114-justify.png) no-repeat;
+	}
+	nav ul li{display: none;}
+	.menu a:focus nav ul li{display: block;}
+}
+@media only screen and (min-width: 760px){
+	body{padding-top: 30px;}
+	header{
+		border-radius: 0;
+		background: transparent;
+	}
+	header h2{color: #313131;padding-left: 0;}
+	.menu a{ display: none;}
+	nav ul li{
+		display: table-cell;
+		float: left;
+		border-top: 0;
+		width: 16.666666666666667%;
+		border-right: 1px solid rgba(0,0,0,.1);
+		background: linear-gradient(#fff, rgba(0,0,0,.06));
+	}
+	nav{
+		margin-top: 15px;
+		display: table;
+		width: 100%;
+		border: 1px solid rgba(0,0,0,.1);
+		border-radius: 6px;
+	}
+	nav li a {
+		padding: 7px 15px;
+		color: #777;
+		text-shadow: 0px 1px 0px #FFF;
+		display: block;
+	    font-weight: bold;
+	    text-align: center;
+	 }
+	 nav li:last-child a {
+	    border-right: 0;
+	 }
+	 .marketing{margin-bottom: 50px;}
+
+	.container .columns_1	{ width: 8.333333%;}
+	.container .columns_2	{ width: 16.666667%;}
+	.container .columns_3	{ width: 25%;}
+	.container .columns_4	{ width: 33.333333%;}
+	.container .columns_5	{ width: 41.666667%;}
+	.container .columns_6	{ width: 50%;}
+	.container .columns_7	{ width: 58.333333%;}
+	.container .columns_8	{ width: 66.666667%;}
+	.container .columns_9	{ width: 75%;}
+	.container .columns_10	{ width: 83.333333%;}
+	.container .columns_11	{ width: 91.666667%;}
+	.container .columns_12	{ width: 100%;}
+
+	.container{
+		width: 75%;
+		margin: 0 auto;
+	}
+}
